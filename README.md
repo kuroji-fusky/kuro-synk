@@ -4,7 +4,7 @@ A helper utility to check if shared code is outdated
 
 ## Purpose
 
-The purpose of kuro-synk is too make sure that shared components and utilities are in sync with each other, all without the hastle of manually tracking file(s) from repositories and branches.
+The purpose of kuro-synk is to make sure that shared components and utilities are in sync with each other, all without the hastle of manually tracking file(s) from repositories and branches.
 
 The reason for creating this monstrosity is because:
 
