@@ -4,7 +4,7 @@ function synk {
     return 1
   }
 
-  py kuro-synk.py --local-only
+  py ksynk.py --local-only
 }
 
 Export-ModuleMember -Function synk
