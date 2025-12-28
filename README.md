@@ -17,8 +17,23 @@ The reason for creating this monstrosity is because:
 
 **Why not publish your stuff to an npm registry?**
 
-> Yeah, nope. The code I write is just as bad to be publicly be shown from the registry. And even if I had my own private npm registry, I personally don't have time to set it up at this moment.
+> Yeah, nope. The code I write is just as bad to be publicly be shown from the registry. And even if I had my own private npm registry, I personally don't have time to set it up at this moment, and people would have a hard time contributing if they would rely on my private registry, thus making things unnecessarily difficult.
 
 ---
 
 Call it over-engineering, sure, but honestly, if it keeps productivty at bay, then it works for me. Plus, I dunno what the hell I'm doing sometimes and just come up with a duct tape solutions like this one lol
+
+## Setup
+
+Requires at least Python version 3.11; install through `venv`:
+
+```sh
+python -m venv venv
+pip install -r requirements.txt
+```
+
+...or just rawdog it and run the latter command because you're a rebel! "iT's nOt rEcOmMenDeD tO iNsTaLl pAcKaGEs GlOBaLLy", sybau bro, do what makes you happy, they don't know what fun is.
+
+ANYWAYS, the `ksynk.py` file holds the validation logic and spits out a log of changes, while `schema.py` is sole responsible for generating the JSON schema, either running both scripts without a schema will generate them regardless.
+
+How you like them apples?

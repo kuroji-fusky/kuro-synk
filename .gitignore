@@ -1,2 +1,4 @@
-schema.json
+ksynk_schema.json
+
 __pycache__/
+venv/

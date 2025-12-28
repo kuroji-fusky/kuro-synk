@@ -1,11 +1,12 @@
 from argparse import ArgumentParser
+from schema import main as _generate_schema
 
 parser = ArgumentParser(
     description="A utility for checking files if it's outdated",
     epilog="It's important to thoroughly to keep testing until you're satisfied with the changes!"
 )
 
-parser.add_argument("config_file",
+parser.add_argument("--schema", type=str,
                     help="Required to have one, otherwise, it'll generate one automatically")
 
 parser.add_argument("--local-only", action="store_true",
@@ -18,6 +19,10 @@ args = parser.parse_args()
 
 
 def main():
+    with open("ksynk_schema.json", "r") as has_schema:
+        if not (has_schema and args.ci_mode):
+            _generate_schema()
+
     # check for internet first, if none, fallback to local change
     # update schema for any changes
     # do some parsing, log for any errors
