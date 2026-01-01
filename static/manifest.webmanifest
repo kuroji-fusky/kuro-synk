@@ -1,0 +1,7 @@
+{
+  "name": "K-Synk",
+  "short_name": "K-Synk",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "vertical"
+}
